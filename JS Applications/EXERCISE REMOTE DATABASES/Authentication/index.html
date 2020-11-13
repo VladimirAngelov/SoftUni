@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authentication</title>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Playfair+Display&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div id="register-form">
+        <h3 id="register-header">Register</h3>
+
+        <label for="username">Username: </label>
+        <input type="text" id="register-username"/>
+        <label for="password">Password: </label>
+        <input type="password" id="register-password"/>
+        <button id="register-btn">Sign up</button>
+        <p style="display: none" id="register-notification"></p>
+    </div>
+
+    <div id="login-form">
+        <h3 id="login-header">Log in</h3>
+
+        <label for="username">Username: </label>
+        <input type="text" id="username"/>
+        <label for="password">Password: </label>
+        <input type="password" id="password"/>
+        <button id="login-btn">Log in</button>
+        <p style="display: none" id="login-notification"></p>
+    </div>
+</div>
+
+<script src="authentication.js"></script>
+</body>
+</html>

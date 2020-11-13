@@ -1,0 +1,1 @@
+The names of folders, classes, functions and variables are compliant with the names given in the exercise descriptions.

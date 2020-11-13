@@ -1,0 +1,36 @@
+body {
+    font-family: 'Dosis', sans-serif;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+#register-err, #login-err {
+    display: none;
+    color: red;
+}
+
+#login-form {
+    margin-top: 50px;
+}
+
+#login-form, #register-form {
+    border: solid 1px;
+    margin: 5px 3px;
+    width: 800px;
+}
+
+button {
+    margin-bottom: 10px;
+    width: 90px;
+    background-color: white;
+    border: solid 1px;
+    cursor: pointer;
+    height: 21px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
