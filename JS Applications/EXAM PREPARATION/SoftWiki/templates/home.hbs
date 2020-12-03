@@ -1,0 +1,76 @@
+{{> header}}
+<div class="content">
+    <section class="js">
+        <h2>JavaScript</h2>
+        {{#if js}}
+            {{#each js}}
+                <div class="articles">
+                    <article>
+                        <h3>{{title}}</h3>
+                        <p>{{content}}</p>
+                        <a href="/details/{{key}}" class="btn details-btn">Details</a>
+                    </article>
+                </div>
+            {{/each}}
+        {{else}}
+            <div class="articles">
+                <h3 style="color: white">No articles yet</h3>
+            </div>
+        {{/if}}
+    </section>
+    <section class="CSharp">
+        <h2>C#</h2>
+        {{#if csharp}}
+            {{#each csharp}}
+                <div class="articles">
+                    <article>
+                        <h3>{{title}}</h3>
+                        <p>{{content}}</p>
+                        <a href="/details/{{key}}" class="btn details-btn">Details</a>
+                    </article>
+                </div>
+            {{/each}}
+        {{else}}
+            <div class="articles">
+                <h3 style="color: white">No articles yet</h3>
+            </div>
+        {{/if}}
+    </section>
+    <section class="Java">
+        <h2>Java</h2>
+        {{#if java}}
+            {{#each java}}
+                <div class="articles">
+                    <article>
+                        <h3>{{title}}</h3>
+                        <p>{{content}}</p>
+                        <a href="/details/{{key}}" class="btn details-btn">Details</a>
+                    </article>
+                </div>
+            {{/each}}
+        {{else}}
+            <div class="articles">
+                <h3 style="color: white">No articles yet</h3>
+            </div>
+        {{/if}}
+    </section>
+    <section class="Pyton">
+        <h2>Python</h2>
+        {{#if python}}
+            {{#each python}}
+                <div class="articles">
+                    <article>
+                        <h3>{{title}}</h3>
+                        <p>{{content}}</p>
+                        <a href="/details/{{key}}" class="btn details-btn">Details</a>
+                    </article>
+                </div>
+            {{/each}}
+        {{else}}
+            <div class="articles">
+                <h3 style="color: white">No articles yet</h3>
+            </div>
+        {{/if}}
+    </section>
+</div>
+<footer>My Site © Show info....</footer>

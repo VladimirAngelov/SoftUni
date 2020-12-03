@@ -1,0 +1,11 @@
+<header>
+    <h1><a class="home" href="/home">SoftWiki</a></h1>
+    <nav class="nav-buttons">
+        {{#if isAuthenticated}}
+        <a href="/create">Create</a>
+        <a href="/login">Logout</a>
+        {{/if}}
+        <a href="/register" id="register">Register</a>
+    </nav>
+</header>
+<footer>My Site © Show info....</footer>

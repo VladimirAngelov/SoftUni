@@ -1,0 +1,27 @@
+.container.auth{
+    width: 60vw;
+    min-width: 15em;
+    margin: 6em auto;
+}
+
+.auth form legend{
+    margin: 1.5em auto;
+    width: 95%;
+}
+
+#login-notification {
+    display: none;
+    color: red;
+    border: solid 1px;
+    width: 215px;
+    align-items: center;
+}
+
+#register-notification {
+    display: none;
+    color: red;
+    border: solid 1px;
+    width: 335px;
+    align-items: center;
+}
+
