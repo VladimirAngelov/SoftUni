@@ -1,0 +1,22 @@
+<div id="container">
+
+    {{> navigation}}
+    {{> notification}}
+    <section id="viewCatalog" class="background-img">
+
+        <div class="added-hotels">
+            {{#if hotels}}
+                {{#each hotels}}
+                    {{> hotel}}
+                {{/each}}
+            {{else}}
+                <div class="guest">
+                    There are no Hotels found...
+                </div>
+            {{/if}}
+
+        </div>
+    </section>
+
+    <footer>@SoftUni - JS Back-end - BookingUni 2020</footer>
+</div>

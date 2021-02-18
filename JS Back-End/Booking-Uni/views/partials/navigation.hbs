@@ -1,0 +1,22 @@
+<nav>
+    {{#if user.isAuthenticated}}
+        <div class="left-container">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/hotel/create">Add +</a></li>
+            </ul>
+        </div>
+        <div class="right-container">
+            <a href="/auth/profile" class="log-out">{{user.username}}</a>
+            <a href="/auth/logout" class="log-out">Logout</a>
+        </div>
+    {{else}}
+        <div class="left-container">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/auth/login">Login</a></li>
+                <li><a href="/auth/register">Register</a></li>
+            </ul>
+        </div>
+    {{/if}}
+</nav>
