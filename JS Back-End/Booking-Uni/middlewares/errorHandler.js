@@ -24,7 +24,7 @@ module.exports = (error, req, res, next) => {
             error = {message: error['errors'].username['properties'].message};
             res.render('register', {error});
         } else {
-            // For errors in course schema
+            // For errors in hotel schema
             let errorMessage = Object.values(error['errors'])[0]['properties'].message;
             let user = req.user;
 
