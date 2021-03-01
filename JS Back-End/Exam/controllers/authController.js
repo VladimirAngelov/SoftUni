@@ -48,15 +48,16 @@ router.get('/profile', isAuthenticated, async (req, res) => {
     let user = req.user;
 
     if (currentUser.expenses.length > 0) {
-        currentUser.totalAmount = currentUser.expenses.reduce((acc, val) => {
-            return acc.total + val.total;
-        });
+        currentUser.totalAmount = currentUser.expenses.reduce((acc, val) => acc + val.total, 0).toFixed(2);
     } else {
         currentUser.totalAmount = 0;
     }
+
     if (typeof currentUser.totalAmount === 'object') {
+        console.log('here')
         currentUser.totalAmount = currentUser.expenses[0].total;
     }
+
     currentUser.totalMerches = currentUser.expenses.length;
     currentUser.balance = currentUser.amount.toFixed(2);
 

@@ -21,7 +21,7 @@ module.exports = {
     deleteExpense: async (expenseId, userId) => {
         await Expense.deleteOne({_id: expenseId});
         let user = await User.findById(userId)
-        let found = user.expenses.find(x => x._id === expenseId);
+        let found = user.expenses.find(x => x._id.toString() === expenseId);
         let index = user.expenses.indexOf(found);
         user.expenses.splice(index, 1);
         return user.save()
